@@ -8,6 +8,7 @@
 #define __UTILS_H
 
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -36,6 +37,38 @@ void printMenu()
 	cout << "0. Exit" << endl;
 }
 
+// Read and return the content of a text file with given
+// file name
+string readTextFileContent(string filename)
+{
+	string content = "";
+	string line;
+	ifstream fin(filename);
 
+	if (!fin.is_open())
+	{
+		cout << "File " << filename << " not found!" << endl;		
+	}
+	else
+	{
+		while (getline(fin, line))
+		{			
+			content += line + "\n";
+		}
+	}
+	fin.close();
+	return content;
+}
+
+// Write content to a text file with given file name
+void writeTextFile(string filename, string content)
+{
+	ofstream fout(filename);
+	if (fout.is_open())
+	{
+		fout << content;
+	}
+	fout.close();
+}
 
 #endif

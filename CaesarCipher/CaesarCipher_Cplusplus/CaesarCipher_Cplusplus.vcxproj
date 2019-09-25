@@ -19,12 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\CaesarCipher\cipher.cpp" />
-    <ClCompile Include="..\..\CaesarCipher\main.cpp" />
+    <ClCompile Include="cipher.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\CaesarCipher\cipher.hpp" />
-    <ClInclude Include="..\..\CaesarCipher\utils.hpp" />
+    <ClInclude Include="cipher.hpp" />
+    <ClInclude Include="utils.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="sample.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

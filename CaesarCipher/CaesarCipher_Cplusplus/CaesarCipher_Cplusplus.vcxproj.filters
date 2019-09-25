@@ -15,19 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\CaesarCipher\cipher.cpp">
+    <ClCompile Include="cipher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\CaesarCipher\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\CaesarCipher\cipher.hpp">
+    <ClInclude Include="cipher.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\CaesarCipher\utils.hpp">
+    <ClInclude Include="utils.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="sample.txt" />
   </ItemGroup>
 </Project>
